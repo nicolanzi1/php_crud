@@ -42,4 +42,17 @@ if (isset($_GET['edit'])){
     }
 }
 
+if (isset($_POST['update'])){
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $location = $_POST['location'];
+
+    $mysqli->query("UPDATE data SET name='$name', location='$location' WHERE id=$id") or die($mysqli->error());
+
+    $_SESSION['message'] = "Record has been updated!";
+    $_SESSION['msg_type'] = "warning";
+
+    header('location: index.php');
+}
+
 ?>
