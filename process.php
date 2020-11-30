@@ -4,6 +4,7 @@ session_start();
 
 $mysqli = new mysqli('localhost', 'root', 'myphppassword', 'crud') or die(mysqli_error($mysqli));
 
+$id = 0;
 $update = false;
 $name = '';
 $location = '';
