@@ -9,8 +9,9 @@
     <title>PHP Crud</title>
 </head>
 <body>
+    <?php require_once 'process.php'; ?>
     <div class="row justify-content-center">
-        <form action="" method="post">
+        <form action="process.php" method="post">
             <div class="form-group">
                 <label>Name</label>
                 <input type="text" name="name" class="form-control" value="Enter your name">
