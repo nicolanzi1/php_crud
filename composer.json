@@ -1,4 +1,13 @@
 {
+    "name": "nicolanzi/php_crud",
+    "description": "Friends and location app built in PHP and MySql",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nicolanzi1",
+            "email": "nicolanzi@gmail.com"
+        }
+    ],
     "require": {
         "ext-mysql": "*"
     }
